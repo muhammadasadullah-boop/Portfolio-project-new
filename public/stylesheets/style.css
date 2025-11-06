@@ -1,0 +1,8 @@
+body {
+    background-image: url('../images/Hubbleimg.jpg');
+    background-size: cover;       /* cover the whole page */
+    background-repeat: no-repeat; /* don’t tile */
+    background-attachment: fixed; /* stays fixed on scroll */
+    color: yellow;               /* all text white */
+}
+
