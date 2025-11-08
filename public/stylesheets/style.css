@@ -13,11 +13,11 @@ body {
 }
 
 .portfolio-links a { /*styling fo the actual links*/
-    color: red;
+    color: red; /* link color */
 }
 
 .portfolio-links a:hover { /* When user hover over the links they turn white */
-    color: green;
+    color: green; /* hover color */
 
 }
 
@@ -27,7 +27,7 @@ body {
     color: white; /* white text color */
 }
 
-.contact-containter h1 {
+.contact-containter h1 { /*styling for the contact me heading */
     text-align: center; /* centers the text */
     margin-top: 30px; /* margin at the top */
 }
@@ -39,15 +39,34 @@ body {
 
 
 
-.footer-Home {
-    position: fixed;;
-    bottom: 0;
+.footer-Home { /*styling for the footer on home page*/
+    position: fixed; /* fixed position */
+    bottom: 0; /* makes the footer sit at the bottom */
 
 
 }
 
 
-.lead{
-    color:white;
+.lead{ /*Styling for the lead class used in about page */
+    color:white;  /* white text color */
 }
 
+
+.navbar-nav .nav-link { /*Css styling to add animations */
+    transition: transform 0.4s ease, color 0.4s ease; /*Transformation and color change duration */
+    
+}
+
+.navbar-nav .nav-link:hover { /*When user hovers over the navlinks */
+    transform: scale(1.1); /* scales up the size of the link */
+}
+
+
+.user-hover{ /*Css styling to add animations to project pictures */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth transition for pictures in projects*/
+}
+
+.user-hover:hover { /*When user hovers over the project pictures */
+    transform: scale(1.05); /* scales up the size of the project picture */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* adds shadow effect */
+}

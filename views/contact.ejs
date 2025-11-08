@@ -22,7 +22,7 @@
             <nav class = "navbar navbar-expand-lg navbar-light bg-light">
                 <div class = "container-fluid">
                     <!--Instead of the Asadss portfolio my socials links sit here-->
-                    <a class = "navbar-brand" href="#"><%- include('partials/footer.ejs') %></a>
+                    <a class = "navbar-brand" href="#"><%- include('partials/header.ejs') %></a>
                     <!---Toggler menu for smaller screens-->
                     <button class = "navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class = "navbar-toggler-icon"></span>
@@ -71,6 +71,8 @@
             <button type="submit" class="btn btn-primary d-block mx-auto">Submit</button> <!---Submit button using bootstrap classes to center it-->
         </form>
     </main>
+
+    <%- include('partials/footer.ejs') %> <!--Footer inclusion-->
     <!---Includes the bootstrap SJ for the navbar toggle-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>

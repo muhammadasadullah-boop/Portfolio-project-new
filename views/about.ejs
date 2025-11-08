@@ -46,27 +46,36 @@
         </div>
     </header>
 
-<main class = "container text-center my-5">
-     <div class="row align-items-center text-center text-md-start">
-        <div class = "col-md-4 mb-4">
+<main class = "container text-center my-5"> <!---Containter using bootstrap for styling the aboout section. Text center and my-5-->
+     <!----Row align vertically centers, text-center aligns contents in center, and text-md-start pushes content to left for medium screens and larger-->
+    <div class="row align-items-center text-center text-md-start"> 
+        <!---Takes about 6/12 of column width and add margin to the bottom of-->
+        <div class = "col-md-4 mb-5">
+            <!---Image for the about page uses fluid adheres to responsive design and picture is in circle-->
             <img src="/images/about-photo.jpg" alt="Profile Picture of Asad" class="img-fluid rounded-circle profile-pic mt-4--">
      </div>
 
+     <!---Text is centered and takes 6/12 of column space-->
     <div class = "text-center col-md-6">
-        <h1>About Me</h1>
-        <p class = "lead">
+        <h1>About Me</h1> <!--main title-->
+        <p class = "lead"> <!---class for the paragraph for css styling later on-->
+            <!---Main paragprah-->
             Hello! My name is Muhammad Asadullah. I am currently a 2nd year student at Ontartio Tech University. Im taking a Bachelors in Networking & It Security. I like coding but more specifically I want to
             get more into the ethical hacking and cybersecurity feilds. In my free time I watch sports like hockey, play video games and hanging out with my friends. Below I have attached my email and social links.
         </p>
-
+        <!---Font awsome icon + personal email is centered using text-center and list unstyled removes the unwanted bullet point-->
         <ul class = "text-center mt-3 list-unstyled">
-            <li><i class ="fa-solid fa-envelope"></i>muhammadasadullahbusiness@gmail.com</li>
+            <li><i class ="fa-solid fa-envelope"></i>muhammadasadullahbusiness@gmail.com</li> <!---my personal email-->
         </ul>
 
-        <%- include('partials/footer.ejs') %>
+        <%- include('partials/header.ejs') %> <!--Social links-->
 
 </main>
 
+
+
+<%- include('partials/footer.ejs') %> <!--Footer inclusion-->
+<!---Bootstrap js for navbar -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
