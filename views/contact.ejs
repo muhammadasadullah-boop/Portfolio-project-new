@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- notifies the browser that this is an HTML document -->
+<html lang="en"> <!-- Specifies the language of the document which is English -->
+<head>
+    <meta charset="UTF-8"> <!-- ensures correct text encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ensures proper scaling on different devices -->
+    <title>Asad's Portfolio!</title> <!-- name shown in the browser tab -->
+    
+    
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS for styling for the project -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+
+<body>
+    <!--Interactive Navigation-->
+    <header>
+        <div class = "Navigation--bar">
+            <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+                <div class = "container-fluid">
+                    <!--Instead of the Asadss portfolio my socials links sit here-->
+                    <a class = "navbar-brand" href="#"><%- include('partials/footer.ejs') %></a>
+                    <!---Toggler menu for smaller screens-->
+                    <button class = "navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class = "navbar-toggler-icon"></span>
+                        <!---Allows the links to collapse-->
+                    </button>
+                    <div class = "collapse navbar-collapse" id="navbarNav">
+                        <ul class = "navbar-nav ms-auto">
+                            <!----Home page link-->
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <!---about page link-->
+                            <li class="nav-item"><a class="nav-link" href="/about">About Me</a></li>
+                            <!---projects page link-->
+                            <li class="nav-item"><a class="nav-link" href="/projects">Past Projects</a></li>
+                            <!---contact page link-->
+                            <li class="nav-item"><a class="nav-link" href="/contact">Contact Me</a></li>
+                        </ul>
+                         
+                    </div>
+                </div>
+            </nav>              
+        </div>
+    </header>
+
+<main class = "contact-container my-5 pt-5"> <!--contact container using bootstrap to center the form inputs-->
+    <!--Contact page main title-->
+    <div class="text-center mb-4"> <!---Class for the links as well using mb-4 that puts space below the inputs-->
+        <h1>Contact me</h1> <!----Main title-->
+        <p>Leave your information like email address and name, you can also leave an optional message!</p>
+    </div>
+        <form class="contact-form mt-4"> <!--class for contact-form- using bootstrap to make contetn appear a little bit lower on the page mt-5-->
+            <div class = "mb-4 input-group"> <!--mb-4 adds margin below each input group-->
+                <span class="input-group-text"><i class="fa-solid fa-user"></i></span> <!--Icon from Font awsome-->
+                <input type="text" class="form-control" placeholder="Your full Name"> <!----Name box contents-->
+            </div>
+
+            <div class = "mb-4 input-group"> <!--mb-4 adds margin below each input group-->
+                <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span> <!--Icon from Font awsome-->
+                <input type="email" class="form-control" placeholder="Email Address"> <!----Email box contents-->
+            </div>
+
+            <div class = "mb-4 input-group"> <!--mb-4 adds margin below each input group-->
+                <span class="input-group-text"><i class="fa-solid fa-message"></i></span> <!--Icon from Font awsome-->
+                <textarea class="form-control" rows="4" placeholder="Feel Free to Leave a message"></textarea> <!----Message box contents-->
+            </div>
+
+            <button type="submit" class="btn btn-primary d-block mx-auto">Submit</button> <!---Submit button using bootstrap classes to center it-->
+        </form>
+    </main>
+    <!---Includes the bootstrap SJ for the navbar toggle-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
